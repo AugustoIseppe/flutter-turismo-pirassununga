@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:projeto_turismo_pirassununga/models/infos_local.dart';
@@ -306,7 +307,7 @@ class _PesquisaPageState extends State<PesquisaPage> {
                                     CircleAvatar(
                                       radius: 20,
                                       backgroundImage: NetworkImage(
-                                          "http://177.52.106.73/assets/uploads/${infosLocal.localfoto1}"),
+                                          "http://${dotenv.env["HOST"]}/assets/uploads/${infosLocal.localfoto1}"),
                                     ),
                                     Expanded(
                                       child: ListTile(

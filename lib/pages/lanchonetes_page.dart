@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:projeto_turismo_pirassununga/models/infos_local.dart';
 import 'package:projeto_turismo_pirassununga/pages/detalhes_page.dart';
@@ -48,8 +49,6 @@ class _LanchonetesPageState extends State<LanchonetesPage> {
                     ),
                   );
                 default:
-                  //data["result"][index]["localnome"]
-                  //data["result"][index]["localfoto1"]
                   if (snapshot.hasError) {
                     return Container(
                       color: Colors.amber,
@@ -148,7 +147,7 @@ class _LanchonetesPageState extends State<LanchonetesPage> {
                                                 borderRadius:
                                                     BorderRadius.circular(5),
                                                 child: Image.network(
-                                                  "http://177.52.106.73/assets/uploads/${data[index].localfoto1}",
+                                                  "http://${dotenv.env["HOST"]}/assets/uploads/${data[index].localfoto1}",
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),

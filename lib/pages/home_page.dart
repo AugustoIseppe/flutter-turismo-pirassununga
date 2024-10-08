@@ -1,6 +1,7 @@
 // ignore_for_file: unused_import
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ionicons/ionicons.dart';
 import 'package:projeto_turismo_pirassununga/pages/bares_page.dart';
@@ -96,27 +97,6 @@ class _HomePageState extends State<HomePage> {
                 },
                 child: Column(
                   children: [
-                    // Container(
-                    //   width: MediaQuery.of(context).size.width,
-                    //   color: const Color.fromRGBO(153, 44, 75, 1),
-                    //   child: Padding(
-                    //     padding: const EdgeInsets.only(bottom:15.0, top: 15.0),
-                    //     child: Center(
-                    //       child: Text(
-                    //         "Turismo \nPirassununga",
-                    //         style: GoogleFonts.dmSerifDisplay(
-                    //           textStyle: const TextStyle(
-                    //             fontSize: 40,
-                    //             height: 1.1,
-                    //             letterSpacing: 1,
-                    //             color: Colors.white,
-                    //           ),
-                    //         ),
-                    //         textAlign: TextAlign.center,
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
                     const SizedBox(
                       height: 10,
                     ),
@@ -218,10 +198,6 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                 ),
-                                // const SizedBox(
-                                //   width: 20,
-                                // ),
-
                                 Padding(
                                   padding: const EdgeInsets.all(3.0),
                                   child: InkWell(
@@ -258,9 +234,6 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                 ),
-                                // const SizedBox(
-                                //   width: 20,
-                                // ),
                                 Padding(
                                   padding: const EdgeInsets.all(3.0),
                                   child: InkWell(
@@ -297,9 +270,6 @@ class _HomePageState extends State<HomePage> {
                                     ),
                                   ),
                                 ),
-                                // const SizedBox(
-                                //   width: 20,
-                                // ),
                                 Padding(
                                   padding: const EdgeInsets.all(3.0),
                                   child: InkWell(
@@ -599,7 +569,7 @@ class _HomePageState extends State<HomePage> {
                                               //   fit: BoxFit.cover,
                                               // ),
                                               child: Image.network(
-                                                "http://177.52.106.73/assets/uploads/${data[index]["localfoto1"]}",
+                                                "http://${dotenv.env["HOST"]}/assets/uploads/${data[index]["localfoto1"]}",
                                                 fit: BoxFit.cover,
                                               ),
                                             ),
@@ -858,7 +828,7 @@ class _HomePageState extends State<HomePage> {
                                               backgroundColor: Colors.black45,
                                             ),
                                             child: Image.network(
-                                              "http://177.52.106.73/assets/uploads/${data[index]["localfoto1"]}",
+                                              "http://${dotenv.env["HOST"]}/assets/uploads/${data[index]["localfoto1"]}",
                                               fit: BoxFit.cover,
                                             ),
                                           ),

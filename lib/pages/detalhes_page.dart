@@ -10,6 +10,7 @@ import 'package:provider/provider.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:social_media_buttons/social_media_button.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 class Details extends StatefulWidget {
   final Map<String, dynamic> details;
@@ -36,8 +37,6 @@ class _DetailsState extends State<Details> {
     UserFavorites userFavorites = Provider.of(context);
     final Completer<GoogleMapController> controller =
         Completer<GoogleMapController>();
-    //latitude            //longitude
-    //-21.99674234912524, -47.427033597259324
 
     final lat = widget.details["locallatitude"];
     final latitudePaserd = double.tryParse(lat);
@@ -114,11 +113,11 @@ class _DetailsState extends State<Details> {
                 },
               ),
               items: [
-                "http://177.52.106.73/assets/uploads/${widget.details["localfoto1"]}",
-                "http://177.52.106.73/assets/uploads/${widget.details["localfoto2"]}",
-                "http://177.52.106.73/assets/uploads/${widget.details["localfoto3"]}",
-                "http://177.52.106.73/assets/uploads/${widget.details["localfoto4"]}",
-                "http://177.52.106.73/assets/uploads/${widget.details["localfoto5"]}",
+                "http://${dotenv.env['VAR_NAME']}/assets/uploads/${widget.details["localfoto1"]}",
+                "http://${dotenv.env['VAR_NAME']}/assets/uploads/${widget.details["localfoto2"]}",
+                "http://${dotenv.env['VAR_NAME']}/assets/uploads/${widget.details["localfoto3"]}",
+                "http://${dotenv.env['VAR_NAME']}/assets/uploads/${widget.details["localfoto4"]}",
+                "http://${dotenv.env['VAR_NAME']}/assets/uploads/${widget.details["localfoto5"]}",
               ]
                   .map((item) => Padding(
                         padding: const EdgeInsets.all(2.0),

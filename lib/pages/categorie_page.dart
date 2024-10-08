@@ -101,9 +101,6 @@ class _TesteCategoriaEitaState extends State<TesteCategoriaEita> {
                         ),
                       );
                     default:
-                      //data["result"][index]["localnome"]
-                      //data["result"][index]["localfoto1"]
-                      //data["result"][index]["localfoto1"]
                       if (snapshot.hasError) {
                         return const Center(
                           child: Padding(

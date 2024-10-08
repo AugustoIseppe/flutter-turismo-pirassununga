@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 // ignore: unnecessary_import
 import 'package:flutter/widgets.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:projeto_turismo_pirassununga/data/user_favorite.dart';
 import 'package:projeto_turismo_pirassununga/pages/detalhes_page.dart';
@@ -90,7 +91,7 @@ class _FavoritePageState extends State<FavoritePage> {
                       bottomLeft: Radius.circular(10),
                       topLeft: Radius.circular(10)),
                   child: Image.network(
-                    "http://177.52.106.73/assets/uploads/${local["localfoto1"]}",
+                    "http://${dotenv.env['HOST']}/assets/uploads/${local["localfoto1"]}",
                     fit: BoxFit.cover,
                   ),
                 ),

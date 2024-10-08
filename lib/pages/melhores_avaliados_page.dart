@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:projeto_turismo_pirassununga/pages/detalhes_page.dart';
 import 'package:projeto_turismo_pirassununga/service/sectur_pira_service.dart';
@@ -148,7 +149,7 @@ class _MelhoresAvaliadosPageState extends State<MelhoresAvaliadosPage> {
                                                 borderRadius:
                                                     BorderRadius.circular(5),
                                                 child: Image.network(
-                                                  "http://177.52.106.73/assets/uploads/${data[index]["localfoto1"]}",
+                                                  "http://${dotenv.env["HOST"]}/assets/uploads/${data[index]["localfoto1"]}",
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),

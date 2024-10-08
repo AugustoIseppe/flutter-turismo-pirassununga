@@ -127,10 +127,6 @@ class _EventosDetailsState extends State<EventosDetails> {
             //   ),
             //   items: [
             //     data.imagem
-            //     // "http://177.52.106.73/assets/uploads/${widget.details["localfoto2"]}",
-            //     // "http://177.52.106.73/assets/uploads/${widget.details["localfoto3"]}",
-            //     // "http://177.52.106.73/assets/uploads/${widget.details["localfoto4"]}",
-            //     // "http://177.52.106.73/assets/uploads/${widget.details["localfoto5"]}",
             //   ]
             //       .map((item) => Padding(
             //             padding: const EdgeInsets.all(2.0),
