@@ -25,6 +25,7 @@ build/
 .vscode/
 test/
 lib/data/listar_locais.dart
+pubspec.lock
 
 
 
