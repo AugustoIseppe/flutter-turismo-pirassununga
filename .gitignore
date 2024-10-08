@@ -23,6 +23,7 @@ ios/
 web/
 build/
 .vscode/
+test/
 
 
 
