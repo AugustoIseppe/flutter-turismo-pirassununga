@@ -14,7 +14,7 @@ import 'package:projeto_turismo_pirassununga/pages/pizzarias_page.dart';
 import 'package:projeto_turismo_pirassununga/pages/principais_destinos_page.dart';
 import 'package:projeto_turismo_pirassununga/pages/restaurantes_page.dart';
 import 'package:projeto_turismo_pirassununga/service/sectur_pira_service.dart';
-import 'package:projeto_turismo_pirassununga/testes/wdgt_eventos.dart';
+import 'package:projeto_turismo_pirassununga/widgets/wdgt_eventos.dart';
 import 'package:projeto_turismo_pirassununga/utils/mapa_pirassununga.dart';
 import 'package:projeto_turismo_pirassununga/widgets/app_drawer.dart';
 import 'package:provider/provider.dart';
