@@ -12,7 +12,6 @@ class Database {
   Database._internal();
 
   Future<void> openConnection() async {
-    await dotenv.load(fileName: ".env");
     if (_connection == null) {
       final settings = ConnectionSettings(
         host: dotenv.env['HOST']!,

@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-// import 'package:project_secturpira_mobile/pages/eventos_page.dart';
 import 'package:projeto_turismo_pirassununga/data/user_favorite.dart';
 import 'package:projeto_turismo_pirassununga/pages/pagina_inicial.dart';
 import 'package:provider/provider.dart';
 
-void main() {
-  // await Future.delayed(Duration(seconds: 2));
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+
+Future<void> main() async {
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
