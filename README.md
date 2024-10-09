@@ -1,11 +1,1 @@
-![IMG-20240905-WA0014](https://github.com/user-attachments/assets/c10a72c0-442c-4915-b380-603e5bbc58b4)
-![IMG-20240905-WA0020](https://github.com/user-attachments/assets/05031f2d-f870-4fa3-bd55-a7c916e6299b)
-![IMG-20240905-WA0016](https://github.com/user-attachments/assets/972fd85d-ff9e-408d-bc27-c87021e3706f)
-![IMG-20240905-WA0017](https://github.com/user-attachments/assets/ef1f4884-57a5-42b8-a642-4205ddda7257)
-![IMG-20240905-WA0016](https://github.com/user-attachments/assets/e71193b4-a950-4ff8-ae27-23df467dd27d)
-![IMG-20240905-WA0022](https://github.com/user-attachments/assets/a0f1918f-d9a5-4b9d-a6a5-752de6bfdb2d)
-![IMG-20240905-WA0019](https://github.com/user-attachments/assets/7814bc98-9821-4d68-9354-51ea502388c7)
-![IMG-20240905-WA0018](https://github.com/user-attachments/assets/e4a476a6-19a9-49df-b92e-e59b3cbeaf9a)
-![IMG-20240905-WA0022](https://github.com/user-attachments/assets/7527ed41-0eae-4455-83c7-c02121d27c6a)
-![IMG-20240905-WA0023](https://github.com/user-attachments/assets/a946d0cd-1e5b-48c5-85d2-81de407bda9d)
 
